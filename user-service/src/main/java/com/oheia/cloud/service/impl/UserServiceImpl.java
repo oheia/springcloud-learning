@@ -51,7 +51,8 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public List<User> getUserByIds(List<Long> ids) {
-        return userList.stream().filter(userItem -> ids.contains(userItem.getId())).collect(Collectors.toList());
+        List<User> list = userList.stream().filter(userItem -> ids.contains(userItem.getId())).collect(Collectors.toList());
+        return list;
     }
 
     @PostConstruct
