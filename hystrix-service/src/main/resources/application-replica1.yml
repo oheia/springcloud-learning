@@ -1,5 +1,5 @@
 server:
-  port: 8401
+  port: 8402
 spring:
   application:
     name: hystrix-service
